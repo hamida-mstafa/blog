@@ -7,7 +7,7 @@ from ..models import User,Comment,Blog
 from .forms import UpdateProfile
 from .. import db,photos
 import markdown2
-from ..email import mail_message
+from ..emails import mail_message
 
 
 @main.route('/')
