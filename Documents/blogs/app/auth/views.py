@@ -5,7 +5,7 @@ from ..models import User
 from .forms import RegistrationForm
 from .forms import LoginForm
 from .. import db
-from ..email import mail_message
+from ..emails import mail_message
 
 
 
@@ -48,4 +48,4 @@ def register():
 
         return redirect(url_for('auth.login'))
         title = "New Account"
-    return render_template('auth/register.html',registration_form = form)    
+    return render_template('auth/register.html',registration_form = form)
